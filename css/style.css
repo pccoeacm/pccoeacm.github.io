@@ -187,14 +187,17 @@ td {
 
 
 .banner {
-  background-image: url(../images/banner_2021.png);
-  background-position: center;
+  background-position: center ;
   background-repeat: no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
   min-height: 500px;
   margin-bottom: 30px;
+}
+
+.carousel-indicators{
+  margin: auto  !important;
 }
 
 #intro {
@@ -1817,4 +1820,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   #mobile-nav-toggle {
     display: inline;
   }
+}
+
+@media only screen 
+  and (max-width : 768px) {
+    .banner {
+      min-height: 350px;
+    }
+}
+
+@media only screen 
+  and (max-width : 425px) {
+    .carousel-inner img{
+      height: 400px ;
+    }
 }
